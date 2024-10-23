@@ -11,6 +11,7 @@ frontend:
     preBuild:
       commands:
         - yarn install
+        - npx update-browserslist-db@latest
     build:
       commands:
         - REACT_APP_CONNECT_REGION=${REACT_APP_CONNECT_REGION}
